@@ -1,0 +1,80 @@
+body {
+
+}
+
+.outer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 6px rgba(60, 111, 242, 0.4);
+    max-width: 500px; /* Use max-width for responsiveness */
+    padding: 20px 40px;
+    width: 90%; /* Adjust the width for smaller screens */
+}
+
+.header h1 {
+    color: #0056d6;
+    margin-bottom: 10px;
+    font-size: 4.1em;
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 0;
+    font-size: 1.3em;
+    color: #adc2f8;
+    font-weight: 100;
+}
+
+.input-area input[type="text"] {
+    outline: none;
+    border: none;
+    height: 35px;
+    width: 100%; /* Make the input width 100% for responsiveness */
+    border-radius: 15px;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.input-area input[type="text"]::placeholder {
+    text-align: center;
+    color: #0056d6;
+    font-weight: 100;
+}
+
+small {
+    color: #adc2f8;
+    font-size: 6px;
+}
+
+.btn button[type="submit"] {
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 9px;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 100;
+    width: 100%; /* Make the button width 100% for responsiveness */
+}
+
+.btn button {
+    background-color: #0056b3;
+}
+
+/* Media query for small screens */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}
